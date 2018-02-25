@@ -3,7 +3,6 @@ html {
 	color: #616569;
 }
 
-
 /* Header Section */
 
 header {
@@ -51,7 +50,7 @@ header {
 
 /* Mobile-Header Section */
 
-@media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 640px) {
 	.menu .main-nav {
 		display: none;
 	}
@@ -83,7 +82,7 @@ header {
 
 .content-left {
 	padding: 2rem 1.5rem;
-	max-width: 60%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 }
@@ -98,15 +97,15 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	max-width: 40%;
+	width: 40%;
 }
 
 .banner-text {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	width: 60%;
-	margin-left: 3rem;
+	width: auto;
+	padding: 0 3rem 0 1.5rem;
 }
 
 .banner-text h1,
@@ -124,44 +123,53 @@ header {
 	font-size: 1.5rem;
 }
 
-.banner-text .button {
+.button {
 	background-color: #3c3e3f;
-	width: 84%;
+	width: 80%;
 	text-align: center;
-	padding: 0.5rem;
+	padding: 0.8rem;
 	border-radius: 4px;
 }
 
-.button a {
-	padding: 8px auto;
+.banner-text a {
 	color: white;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
 
 
 /* Mobile-Banner Section */
 
-@media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 640px) {
+
 	.banner {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
 	}
+
 	.content-left {
 		margin: 0 auto;
 		padding: 0;
-		max-width: 100%;
+		width: 100%;
 		display: block;
 	}
+
 	.banner .content-right {
-		max-width: 100%;
-		padding: 0px 0px;
+		width: 100%;
+		padding: 0;
 	}
+
 	.banner-text {
 		max-width: 100%;
-		padding: 2rem 0 2rem 1rem;
+		margin: 0;
+		padding: 2rem;
+	}
+
+	.button {
+		width: 90%;
+		background-color: #919496;
 	}
 }
 
@@ -201,6 +209,7 @@ header {
 .info-box {
 	padding: 0 1rem 1rem;
 	display: flex;
+	align-items: center;
 }
 
 .info-box .mobile-img {
@@ -217,7 +226,6 @@ header {
 .info-box .info-text {
 	max-width: 65%;
 	padding-left: 1.5rem;
-	padding-top: 2.5rem;
 }
 
 .info-text h3 {
@@ -238,45 +246,46 @@ header {
 
 /* Mobile-Information Section */
 
-@media only screen and (max-width: 480px) {
-	.main-information {
-		max-width: 100%;
-	}
-	/* Content on the left */
+ @media only screen and (max-width: 640px) {
+
 	.main-information .content-left {
 		display: none;
 	}
-	/* Content on the right */
 	.main-information .content-right {
-		max-width: 100%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.info-box .desktop-img {
 		display: none;
 	}
+
 	.content-right .info-box {
-		padding: 0 1rem 4rem;
+		padding: 0 2rem 4rem;
 		display: flex;
 		flex-direction: column;
-		max-width: 100%;
-	}
-	.info-box .info-text {
-		justify-content: center;
-		display: block;
 		width: 100%;
 	}
-	.info-box .mobile-img img {
+
+	.info-box .info-text {
+		width: 100%;
+	}
+
+	.info-box .mobile-img {
 		display: block;
-		max-width: 100%;
-		height: auto;
+
 	}
 }
 
 
 /* Supporting Section */
+
+.mobile-course {
+	display: none;
+}
 
 .supporting {
 	max-width: 100%;
@@ -333,6 +342,39 @@ header {
 	font-weight: lighter;
 }
 
+/* Mobile-Supporting Section */
+@media only screen and (max-width: 640px) {
+
+	.flex {
+		display: none;
+	}
+
+	.supporting h2 {
+		padding: 2rem 0 1rem;
+		color: #464a4c;
+	}
+
+	.mobile-course {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
+	.mobile-course a {
+		text-decoration: none;
+		font-size: 1.4rem;
+		color: #444749;
+	}
+
+	.course-button {
+		background-color: #cccccc;
+    padding: 1rem 0 1.5rem 1rem;
+		margin: 0 4rem 0.5rem;
+	}
+
+
+}
 
 /* Add-supportive Section */
 
@@ -375,7 +417,27 @@ header {
 .add-supporting .content-left p {
 	padding: .5rem 0 2rem;
 }
+/* Mobile add-supporting Section */
 
+@media only screen and (max-width: 640px) {
+	.content-right {
+		display: none;
+	}
+
+	.content-left h3,
+	.content-left p {
+		display: none;
+	}
+
+	.add-supporting h2 {
+		margin: 2rem 0 2rem;
+    padding: 0;
+	}
+
+	video {
+		margin-bottom: 1.5rem;
+	}
+}
 
 /* Footer Section */
 
@@ -400,4 +462,17 @@ footer nav {
 footer ul li {
 	display: inline;
 	padding: .5rem;
+}
+
+footer li a {
+	text-decoration: none;
+	color: #3e4244;
+}
+
+@media only screen and (max-width: 640px) {
+  footer {
+		border-top: none;
+		background-color: white;
+		height: auto;
+	}
 }
