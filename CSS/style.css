@@ -291,6 +291,7 @@ header {
   }
   .info-box .info-text {
     width: 100%;
+    padding-top: 2rem;
   }
   .info-box .mobile-img {
     display: block;
@@ -365,9 +366,8 @@ header {
   .flex {
     display: none;
   }
-  .supporting h2 {
+  .supporting h1 {
     padding: 2rem 0 1rem;
-    color: #464a4c;
   }
   .mobile-course {
     display: flex;
